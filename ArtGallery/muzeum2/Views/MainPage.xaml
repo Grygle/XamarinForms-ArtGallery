@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:muzeum2"
+             xmlns:viewModel="clr-namespace:muzeum2.ViewModels;assembly=muzeum2"
+             x:Class="muzeum2.MainPage">
+
+   
+    
+    <ContentPage.BindingContext>
+        <viewModel:MainPageViewModel/>
+    </ContentPage.BindingContext>
+    
+    <AbsoluteLayout x:Name="ViewLayout">
+    <Image Source="Scream2.jpg" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All" />
+    <AbsoluteLayout x:Name="ViewControls" AbsoluteLayout.LayoutBounds="1,1,1,.40" AbsoluteLayout.LayoutFlags="All" BackgroundColor="#66000000" Margin="10,10,10,10">
+        <StackLayout Orientation="Vertical" Margin="0,0,0,0" BackgroundColor="Transparent" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="1,1,1,1">
+ 
+         <Grid Margin="1">
+                    <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="120" />
+                </Grid.ColumnDefinitions>
+                <Label Text="Aplikacja muzeum" TextColor="White" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="2" />
+                <Button Text="Email" Command="{Binding NavigateToEmailCommand}" BackgroundColor="#77000000" BorderRadius="3" BorderColor="White" BorderWidth="1" TextColor="White" Grid.Row="0" Grid.Column="3" />
+               <Button Text="Obrazy" Command="{Binding NavigateToMainCommand}" BackgroundColor="#77000000" BorderRadius="4" BorderColor="White" BorderWidth="1" TextColor="White" Grid.Row="1" Grid.Column="3" />
+            </Grid>
+        </StackLayout>
+    </AbsoluteLayout>
+</AbsoluteLayout>
+
+</ContentPage>

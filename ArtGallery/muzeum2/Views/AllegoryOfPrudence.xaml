@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:muzeum2" 
+             x:Class="muzeum2.AllegoryOfPrudence">
+   <!-- <ScrollView> -->
+   <AbsoluteLayout x:Name="ViewLayout">
+    <Image Source="AllegoryOfPrudence.jpg" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All" />
+    <StackLayout Padding="2,5" BackgroundColor="#77000000">
+        <Label Text="Tytuł: Alegoria roztropności" TextColor="Silver" BackgroundColor="#77000000"/>    
+        <Label Text="Autor: Tycjan" TextColor="Silver"/>
+        <Label Text="Rok: 1566 - 1570" TextColor="Silver"/>
+        <Label Text="Styl: renesans" TextColor="Silver" BackgroundColor="Transparent"/>
+            
+    </StackLayout>
+</AbsoluteLayout>
+     <!--   </ScrollView> -->
+</ContentPage>

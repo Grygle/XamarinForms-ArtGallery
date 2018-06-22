@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:muzeum2" 
+             xmlns:viewModel="clr-namespace:muzeum2.ViewModels;assembly=muzeum2"
+             x:Class="muzeum2.PageObrazy">
+
+        <ContentPage.BindingContext>
+        <viewModel:PageObrazyViewModel/>
+    </ContentPage.BindingContext>
+<!--<ScrollView>-->
+    <AbsoluteLayout x:Name="ViewLayout">
+    <Image Source="Scream2.jpg" HorizontalOptions="Fill" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All" />
+    <AbsoluteLayout x:Name="ViewControls" AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="#66000000" Margin="10,10,10,10">
+        <StackLayout Orientation="Vertical" Margin="20,20,20,20" BackgroundColor="Transparent" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="1,1,1,1">
+ 
+            <Grid Margin="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+                <Button Image="TheNightWatch.jpg" Command="{Binding NavigateToNightWatchCommand}"  Text="Watch" BackgroundColor="#77000000" BorderRadius="3" BorderColor="Black" BorderWidth="1" TextColor="White" HorizontalOptions="Fill" Grid.Column="0" />
+                <Button Image="Scream2.jpg" Command="{Binding NavigateToScreamCommand}" Text="Scream" BackgroundColor="#77000000" BorderRadius="3" BorderColor="Black" BorderWidth="1" TextColor="White" HorizontalOptions="Fill" Grid.Column="1" />
+                <Button Image="StarryNight.jpg" Command="{Binding NavigateToStarryNightCommand}" Text="Starry Night" BackgroundColor="#77000000" BorderRadius="3" BorderColor="Black" BorderWidth="1" TextColor="White" HorizontalOptions="Fill" Grid.Column="2" />
+                <Button Image="TheAncientofDays.jpg" Command="{Binding NavigateToTheAncientOfDaysCommand}" Text="Starry Night" BackgroundColor="#77000000" BorderRadius="3" BorderColor="Black" BorderWidth="1" TextColor="White" HorizontalOptions="Fill" Grid.Column="3" />
+            </Grid>
+            <Grid Margin="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+                <Button Image="AllegoryOfPrudence.jpg" Command="{Binding NavigateToAllegoryOfPrudenceCommand}" Text="Watch" BackgroundColor="#77000000" BorderRadius="3" BorderColor="Black" BorderWidth="1" TextColor="White" HorizontalOptions="FillAndExpand" Grid.Column="0" />
+                <Button Image="ApplesAndJar.jpg" Command="{Binding NavigateToApplesAndJarCommand}" Text="Scream" BackgroundColor="#77000000" BorderRadius="3" BorderColor="Black" BorderWidth="1" TextColor="White" HorizontalOptions="FillAndExpand" Grid.Column="1" />
+                <Button Image="OddsAndEnds.jpg" Command="{Binding NavigateToOddsAndEndsCommand}" Text="Starry Night" BackgroundColor="#77000000" BorderRadius="3" BorderColor="Black" BorderWidth="1" TextColor="White" HorizontalOptions="FillAndExpand" Grid.Column="2" />
+                <Button Image="SelfPortrait.jpg" Command="{Binding NavigateToSelfPortraitCommand}" Text="Starry Night" BackgroundColor="#77000000" BorderRadius="3" BorderColor="Black" BorderWidth="1" TextColor="White" HorizontalOptions="FillAndExpand" Grid.Column="3" />
+            </Grid>
+            <Grid Margin="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+                <Button Image="SpringTime.jpg" Command="{Binding NavigateToSpringTimeCommand}" Text="Watch" BackgroundColor="#77000000" BorderRadius="3" BorderColor="Black" BorderWidth="1" TextColor="White" HorizontalOptions="FillAndExpand" Grid.Column="0" />
+                <Button Image="TheStormOnTheSeaOfGalilee.jpg" Command="{Binding NavigateToTheStormOnTheSeaOfGalileeCommand}" Text="Scream" BackgroundColor="#77000000" BorderRadius="3" BorderColor="Black" BorderWidth="1" TextColor="White" HorizontalOptions="FillAndExpand" Grid.Column="1" />
+                <Button Image="TheFourTimesOfDayNight.jpg" Command="{Binding NavigateToTheFourTimesOfDayNightCommand}" Text="Starry Night" BackgroundColor="#77000000" BorderRadius="3" BorderColor="Black" BorderWidth="1" TextColor="White" HorizontalOptions="FillAndExpand" Grid.Column="2" />
+                <Button Image="TheMilkmaid.jpg" Command="{Binding NavigateToTheMilkmaidCommand}" Text="Starry Night" BackgroundColor="#77000000" BorderRadius="3" BorderColor="Black" BorderWidth="1" TextColor="White" HorizontalOptions="FillAndExpand" Grid.Column="3" />
+            </Grid>
+        </StackLayout>
+    </AbsoluteLayout>
+</AbsoluteLayout>
+<!--</ScrollView>-->
+</ContentPage>

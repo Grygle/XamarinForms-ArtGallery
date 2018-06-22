@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:muzeum2" 
+             x:Class="muzeum2.ApplesAndJar">
+   <!-- <ScrollView> -->
+   <AbsoluteLayout x:Name="ViewLayout">
+    <Image Source="ApplesAndJar.jpg" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All" />
+    <StackLayout Padding="5,10" BackgroundColor="#77000000">
+        <Label Text="Tytuł: Still life: apples and jar" TextColor="Silver" BackgroundColor="#77000000"/>    
+        <Label Text="Autor: Samuel Peploe" TextColor="Silver"/>
+        <Label Text="Rok: 1912 - 1916" TextColor="Silver"/>
+        <Label Text="Styl: post-impresjonizm" TextColor="Silver" BackgroundColor="Transparent"/>
+            
+    </StackLayout>
+</AbsoluteLayout>
+     <!--   </ScrollView> -->
+</ContentPage>

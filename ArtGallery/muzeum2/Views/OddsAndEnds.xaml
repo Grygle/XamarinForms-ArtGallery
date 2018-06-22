@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:muzeum2" 
+             x:Class="muzeum2.OddsAndEnds">
+   <!-- <ScrollView> -->
+   <AbsoluteLayout x:Name="ViewLayout">
+    <Image Source="OddsAndEnds.jpg" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All" />
+    <StackLayout Padding="5,10" BackgroundColor="#77000000">
+        <Label Text="Tytuł: Odds and Ends" TextColor="Silver" BackgroundColor="#77000000"/>    
+        <Label Text="Autor: Emily Carr" TextColor="Silver"/>
+        <Label Text="Rok: 1939" TextColor="Silver"/>
+            
+    </StackLayout>
+</AbsoluteLayout>
+     <!--   </ScrollView> -->
+</ContentPage>

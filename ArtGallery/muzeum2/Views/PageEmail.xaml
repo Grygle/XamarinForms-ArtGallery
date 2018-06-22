@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModel="clr-namespace:muzeum2.ViewModels;assembly=muzeum2"
+             xmlns:local="clr-namespace:muzeum2" 
+             x:Class="muzeum2.PageEmail">
+
+    <ContentPage.BindingContext>
+        <viewModel:PageEmailViewModel/>
+    </ContentPage.BindingContext>
+    
+    <Grid>
+        <Button Text="Waliduj"
+              Command="{Binding NavigateToValidationCommand}"
+             Grid.Row="1"
+             FontSize="19"
+             BackgroundColor="#77000000" BorderRadius="3" BorderColor="White" BorderWidth="1" TextColor="White"
+              >
+    
+    <Button.IsVisible>
+        <OnPlatform x:TypeArguments="x:Boolean"
+                      iOS="true"
+                      Android="false"/>
+     </Button.IsVisible>
+    </Button>
+
+
+        <Image Grid.Row="0" Aspect="AspectFill" Source="TheFourTimesOfDayNight.jpg"  /> 
+        <Image Grid.Row="2" Aspect="AspectFill" Source="TheFourTimesOfDayNight.jpg"  /> 
+
+     <Button Text="Wyślij feedback" 
+             Command="{Binding NavigateToEmailCommand}"
+             Grid.Row="1"
+             BackgroundColor="#77000000" 
+             BorderRadius="3" 
+             BorderColor="White" 
+             BorderWidth="1" 
+             TextColor="White"
+             >
+    
+    <Button.IsVisible>
+        <OnPlatform x:TypeArguments="x:Boolean"
+                      iOS="false"
+                      Android="true"/>
+     </Button.IsVisible>
+    </Button>
+      
+   </Grid>
+    
+    
+</ContentPage>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:muzeum2" 
+             x:Class="muzeum2.Page3">
+
+   <AbsoluteLayout x:Name="ViewLayout">
+    <Image Source="Scream2.jpg" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All"  />
+    <StackLayout Padding="5,10" BackgroundColor="#77000000">
+        <Label Text="Tytuł: Krzyk (norw. Skrik)" BackgroundColor="#77000000" TextColor="Silver"/>    
+        <Label Text="Autor: Edvard Munch" TextColor="Silver"/>
+        <Label Text="Rok: 1893" TextColor="Silver"/>
+        <Label Text="Styl: ekspresjonizm" BackgroundColor="Transparent" TextColor="Silver"/>
+            
+    </StackLayout>
+</AbsoluteLayout>
+
+</ContentPage>
